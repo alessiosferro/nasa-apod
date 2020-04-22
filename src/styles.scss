@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+.form-control {
+  width: 20rem;
+  padding: .5rem 1rem;
+  font-size: 1.4rem;
+  border: 1px solid #000;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+
+  > label {
+    margin-bottom: 5px;
+  }
+}
+
+.center-container {
+  width: 60rem;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--vertical {
+    flex-direction: column;
+  }
+}
+
+.main-header {
+  margin-bottom: 1.5rem;
+
+  > h1 {
+    margin: 0; 
+    padding: 0;
+  }
+}
+
+.flex-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+figure.apod {
+  width: 100%;
+  margin: 0 auto;
+
+  > img {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  > figcaption {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    text-justify: distribute;
+    text-align: justify;
+  }
+}
+
+// Utility
+
+.w-100 {
+  width: 100%;
+}
